@@ -15,7 +15,7 @@ let fnCE = document.querySelector("#CE");
 
 let screen = document.querySelector("#screen");
 let result = 0, add = 0;
-let isEqual = 0, isPlus = 0, isValid = 0;
+let isEqual = 0, isPlus = 0;
 
 fn1.onclick = function () {
     if (isPlus)
@@ -105,21 +105,17 @@ fnPlus.onclick = function () {
     }
     isEqual = 0;
     isPlus = 1;
-    isValid = 1;
 }
 
 fnEqual.onclick = function () {
-    if (isValid) {
-        if (!isEqual)
-            add = parseInt(screen.textContent);
-        result += add;
-        // console.log(result);
-        screen.textContent = result;
-        isEqual = 1;
-        isPlus = 0;
-    }
+    if (!isEqual) 
+        add = parseInt(screen.textContent);
+    result += add;
+    // console.log(result);
+    screen.textContent = result;
+    isEqual = 1;
+    isPlus = 0;
 }
-
 
 fnAC.onclick = function () {
     screen.textContent = "0";
@@ -127,7 +123,6 @@ fnAC.onclick = function () {
     add = 0;
     isEqual = 0;
     isPlus = 0;
-    isValid = 0;
 }
 
 fnCE.onclick = function () {

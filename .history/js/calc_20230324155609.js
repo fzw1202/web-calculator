@@ -120,7 +120,6 @@ fnEqual.onclick = function () {
     }
 }
 
-
 fnAC.onclick = function () {
     screen.textContent = "0";
     result = 0;

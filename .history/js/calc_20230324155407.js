@@ -105,21 +105,17 @@ fnPlus.onclick = function () {
     }
     isEqual = 0;
     isPlus = 1;
-    isValid = 1;
 }
 
 fnEqual.onclick = function () {
-    if (isValid) {
-        if (!isEqual)
-            add = parseInt(screen.textContent);
-        result += add;
-        // console.log(result);
-        screen.textContent = result;
-        isEqual = 1;
-        isPlus = 0;
-    }
+    if (!isEqual) 
+        add = parseInt(screen.textContent);
+    result += add;
+    // console.log(result);
+    screen.textContent = result;
+    isEqual = 1;
+    isPlus = 0;
 }
-
 
 fnAC.onclick = function () {
     screen.textContent = "0";

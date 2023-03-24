@@ -53,7 +53,7 @@ body {
 
 .function{
     display: grid;
-    grid-template-columns: 203px 203px;
+    grid-template-columns: 203px 202.5px;
     gap: 3px;
 }
 
