@@ -3,8 +3,9 @@ A simple JavaScript homework
 
 
 ### Features:
-- have one register for calculation
 - support addition
+- have one register for calculation
+- use BigInt to deal with data overflow
 - press AC to clear the screen and the register
 - press CE to only clear the screen and input numbers again
 - support keyboard input
@@ -19,5 +20,4 @@ A simple JavaScript homework
 
 ### TODO
 - support minus, plus and divide
-- take care of data overflow
 - add press animation for buttons

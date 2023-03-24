@@ -26,7 +26,7 @@ fn1.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "1");
+    screen.textContent = BigInt(screen.textContent + "1");
     isEqual = 0;
     isAdd = 0;
 }
@@ -39,7 +39,7 @@ fn2.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "2");
+    screen.textContent = BigInt(screen.textContent + "2");
     isEqual = 0;
     isAdd = 0;
 }
@@ -52,7 +52,7 @@ fn3.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "3");
+    screen.textContent = BigInt(screen.textContent + "3");
     isEqual = 0;
     isAdd = 0;
 }
@@ -65,7 +65,7 @@ fn4.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "4");
+    screen.textContent = BigInt(screen.textContent + "4");
     isEqual = 0;
     isAdd = 0;
 }
@@ -78,7 +78,7 @@ fn5.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "5");
+    screen.textContent = BigInt(screen.textContent + "5");
     isEqual = 0;
     isAdd = 0;
 }
@@ -91,7 +91,7 @@ fn6.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "6");
+    screen.textContent = BigInt(screen.textContent + "6");
     isEqual = 0;
     isAdd = 0;
 }
@@ -104,7 +104,7 @@ fn7.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "7");
+    screen.textContent = BigInt(screen.textContent + "7");
     isEqual = 0;
     isAdd = 0;
 }
@@ -117,7 +117,7 @@ fn8.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "8");
+    screen.textContent = BigInt(screen.textContent + "8");
     isEqual = 0;
     isAdd = 0;
 }
@@ -130,7 +130,7 @@ fn9.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "9");
+    screen.textContent = BigInt(screen.textContent + "9");
     isEqual = 0;
     isAdd = 0;
 }
@@ -143,14 +143,14 @@ fn0.onclick = function () {
     }
     if (isAdd)
         screen.textContent = "0";
-    screen.textContent = parseInt(screen.textContent + "0");
+    screen.textContent = BigInt(screen.textContent + "0");
     isEqual = 0;
     isAdd = 0;
 }
 
 fnAdd.onclick = function () {
     if (!isEqual && !isAdd) {
-        add = parseInt(screen.textContent);
+        add = BigInt(screen.textContent);
         // console.log(add);
         result += add;
     }
@@ -162,7 +162,7 @@ fnAdd.onclick = function () {
 fnEqual.onclick = function () {
     if (isValid) {
         if (!isEqual) {
-            add = parseInt(screen.textContent);
+            add = BigInt(screen.textContent);
             if (isContinue) {
                 [add, result] = [result, add];
                 isContinue = 0;
@@ -206,7 +206,7 @@ document.onkeydown = function(event){
         }
         if (isAdd)
             screen.textContent =  "0";
-        screen.textContent = parseInt(screen.textContent + (code - 48));
+        screen.textContent = BigInt(screen.textContent + (code - 48));
         isEqual = 0;
         isAdd = 0;
     }
