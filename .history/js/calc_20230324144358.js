@@ -97,15 +97,3 @@ fnEqual.onclick = function () {
     isEqual = 1;
     isPlus = 0;
 }
-
-fnAC.onclick = function () {
-    screen.textContent = "";
-    result = 0;
-    add = 0;
-    isEqual = 0;
-    isPlus = 0;
-}
-
-fnCE.onclick = function () {
-    screen.textContent = "";
-}

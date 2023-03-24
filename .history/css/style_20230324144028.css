@@ -53,8 +53,8 @@ body {
 
 .function{
     display: grid;
-    grid-template-columns: 202.5px 202.5px;
-    gap: 3px;
+    grid-template-columns: 205px 205px;
+    gap: 5px;
 }
 
 .function > div {
@@ -64,7 +64,7 @@ body {
     background-color: lightsteelblue;
     border-radius: 5px;
     border: 2px solid gray;
-    color: red;
+    color: black;
     text-align: center;
     font-weight: bold;
     height: 60px;

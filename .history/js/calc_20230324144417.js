@@ -105,7 +105,3 @@ fnAC.onclick = function () {
     isEqual = 0;
     isPlus = 0;
 }
-
-fnCE.onclick = function () {
-    screen.textContent = "";
-}

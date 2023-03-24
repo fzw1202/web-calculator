@@ -10,8 +10,6 @@ let fn9 = document.querySelector("#nine");
 let fn0 = document.querySelector("#zero");
 let fnPlus = document.querySelector("#plus");
 let fnEqual = document.querySelector("#equal");
-let fnAC = document.querySelector("#AC");
-let fnCE = document.querySelector("#CE");
 
 let screen = document.querySelector("#screen");
 let result = 0, add = 0;
@@ -96,16 +94,4 @@ fnEqual.onclick = function () {
     screen.textContent = result;
     isEqual = 1;
     isPlus = 0;
-}
-
-fnAC.onclick = function () {
-    screen.textContent = "";
-    result = 0;
-    add = 0;
-    isEqual = 0;
-    isPlus = 0;
-}
-
-fnCE.onclick = function () {
-    screen.textContent = "";
 }

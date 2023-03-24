@@ -32,7 +32,7 @@ body {
     background-color: lightsteelblue;
     border-style: solid;
     border-radius: 5px;
-    height: 50px;
+    height: 45px;
     border: 2px solid gray;
     color: black;
     text-align: right;
@@ -49,23 +49,4 @@ body {
     font-weight: bolder;
     font-size: larger;
     color: green;
-}
-
-.function{
-    display: grid;
-    grid-template-columns: 202.5px 202.5px;
-    gap: 3px;
-}
-
-.function > div {
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 3px;
-    background-color: lightsteelblue;
-    border-radius: 5px;
-    border: 2px solid gray;
-    color: red;
-    text-align: center;
-    font-weight: bold;
-    height: 60px;
 }
